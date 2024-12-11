@@ -1,3 +1,62 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities'
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
+	Refer to tailwind.config.js for custom colors
+*/
+* {
+	font-family: 'Open Sans Variable', sans-serif;
+}
+
+body {
+	@apply bg-slate;
+}
+
+h2, h3, h4, h5{ font-weight: 900;}
+
+.container {
+	width: 92%;
+	margin: auto;
+	@apply overflow-x-hidden;
+}
+
+
+@media only screen and (min-width: 576px) {
+	.signal-line {
+		--rotation: 0deg;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+section{@apply py-20;}
+
+@layer components {
+	/* Following CSS all apply to buttons. 
+		Dark = a button that exists on a dark background
+		Light = a button that exists on a light background
+		CTA = inverts the color scheme of the regular light/dark buttons to provide contrast
+	*/
+	.button {
+        @apply py-5 px-4 box-border text-2xl align-middle text-center font-black inline-flex mr-5 mb-5 border-4 rounded-sm bg-white/0 transition-colors duration-500 ease-in-out;
+    }
+	.dark{
+        @apply text-slate border-slate hover:bg-slate hover:text-white;
+	}
+	.cta.dark{
+        @apply text-white bg-slate border-slate hover:bg-white hover:border-slate hover:text-slate;
+	}
+	.light{
+        @apply text-white border-white hover:bg-white hover:text-slate;
+	}
+	.cta.light {
+        @apply text-slate bg-white/100 hover:bg-slate hover:text-white hover:border-white;
+	}
+	.cta{
+		vertical-align: middle;
+	}
+  }
