@@ -25,6 +25,8 @@
 	},
 	"dependencies": {
 		"@tailwindcss/typography": "^0.5.15",
-		"clsx": "^2.1.1"
+		"clerk-sveltekit": "^0.4.2",
+		"clsx": "^2.1.1",
+		"local-group-sv5-new": "file:"
 	}
 }

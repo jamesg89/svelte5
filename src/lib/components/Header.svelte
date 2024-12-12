@@ -4,6 +4,10 @@
   import { navigation } from "./config/navigation";
   import Button from '$lib/components/Button.svelte';
   import { pageNameStore } from '$lib/stores';
+	import UserButton from 'clerk-sveltekit/client/UserButton.svelte'
+	import SignedIn from 'clerk-sveltekit/client/SignedIn.svelte'
+	import SignedOut from 'clerk-sveltekit/client/SignedOut.svelte'
+  import SignInButton from 'clerk-sveltekit/client/SignInButton.svelte';
 
   let scrolled = $state(false);
   let isOpen = $state(false);
@@ -41,7 +45,7 @@
         <span class="sr-only">The Local Real Estate Group</span>
         
         <!-- Desktop Menu -->
-        <ul class="md:flex gap-6 hidden">
+        <ul class="md:flex gap-6 hidden items-center">
           {#each navigation as item (item.label)}
             <li class="{home ? 'hover:text-slate text-white' : 'hover:text-gray-default text-slate'} ">
               <a href={item.link} class="inline-flex items-center">
@@ -49,6 +53,14 @@
               </a>
             </li>
           {/each}
+          <li>
+            <SignedIn>
+                <UserButton afterSignOutUrl="/" />
+            </SignedIn>
+            <SignedOut>
+                <SignInButton mode="modal" class="text-slate bg-white hover:text-white hover:bg-slate border border-slate transition ease-in-out duration-500 flex items-center px-4 py-2 rounded-full" />
+            </SignedOut>
+          </li>
         </ul>
     <!-- Hamburger Button (Mobile) -->
     <div class="md:hidden flex ml-auto items-center">
