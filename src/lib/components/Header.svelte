@@ -97,12 +97,12 @@
 
 <!-- Hero/Title Section -->
 {#if home === true}
-<section class="relative h-screen bg-cover bg-center" style="background-image: url('/static/assets/hero.jpg');">
+<section class="relative h-screen bg-cover bg-center hero-image">
 		<div class="absolute inset-0 bg-slate/50"></div>
 		<div class="container relative z-10 flex items-center h-full text-white pl-0">
 			<div class="w-full text-left">
 				<h1 class="lg:text-[85px] lg:max-w-4xl text-6xl font-black md:text-7xl md:leading-snug">							
-                    The Locals Have Your Back
+            The Locals Have Your Back
 				</h1>
 				<p class="mt-4 text-lg md:text-xl">
 					From mortgages to buying, staging to selling, and beyond. We’ve got you. #TheLocalExperience
@@ -153,5 +153,8 @@
   header.default {
     background-color: transparent;
     border-bottom: none;
+  }
+  .hero-image{
+    background-image: url('/vancouver-black-and-white-local-real-estate-group-banner.jpg');
   }
 </style>

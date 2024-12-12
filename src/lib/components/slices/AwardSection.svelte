@@ -16,7 +16,7 @@
 					<div class="flex flex-col md:flex-row gap-10 w-full items-center justify-center lg:justify-between px-0 mx-auto flex-wrap align-bottom">
 						    <div class="flex flex-1 flex-col gap-4 align-bottom text-center min-w-44 max-w-48">
 								<span class="max-h-48 max-w-48 text-center m-auto">
-                                    <Oakwyn />
+                                    <Oakwyn width="180px" />
                                 </span>
 								<p>	
 									Oakwyn Realty Top Producer
@@ -26,7 +26,7 @@
                     <!-- Medallion -->
                             <div class="flex flex-1 flex-col gap-4 align-bottom text-center min-w-44 max-w-48">
 								<span class="max-h-48 max-w-48 text-center m-auto">
-                                    <img src="/static/assets/big-medallion-club-vancouver-award-300x300.png" alt="fancy award for top 10% of all Realtors" />
+                                    <img src="/big-medallion-club-vancouver-award-300x300.png" width="180px" alt="fancy award for top 10% of all Realtors" />
                                 </span>
 								<p>	
 									Top 10% of Greater Vancouver Realtor
@@ -36,7 +36,7 @@
                     <!-- TMG -->
                             <div class="flex flex-1 flex-col gap-4 align-bottom text-center min-w-44 max-w-48">
 								<span class="max-h-48 max-w-48 text-center m-auto">
-                                    <Tmg />
+                                    <Tmg width="180px" />
                                 </span>
 								<p>	
 									Million Dollar Mortgage Club
