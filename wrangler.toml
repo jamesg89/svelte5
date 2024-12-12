@@ -1,0 +1,6 @@
+name = "local-group-sv5"
+compatibility_date = "2024-12-01"
+workers_dev = true
+
+[site]
+bucket = "./build"
