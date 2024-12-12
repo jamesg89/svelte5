@@ -1,5 +1,4 @@
 name = "svelte5"
-type = "javascript"
 
 [site]
 bucket = ".svelte-kit/cloudflare" # Point to the correct output directory
