@@ -9,12 +9,20 @@ export const navigation: NavItem[] = [
         link: '/'
     },
     {
-        label: 'About',
-        link: '/about'
+        label: 'Our Collection',
+        link: '/our-collection'
     },
     {
-        label: 'Services',
-        link: '/services'
+        label: 'Meet The Locals',
+        link: '/meet-the-locals'
+    },
+    {
+        label: 'Buy Local',
+        link: '/buy-local'
+    },
+    {
+        label: 'Sell Local',
+        link: '/sell-local'
     },
     {
         label: 'Contact',

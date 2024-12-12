@@ -1,10 +1,9 @@
 <script lang="ts">
     import type { PageData } from './$types';
-    import Hero from '$lib/components/slices/Hero.svelte';
     import { pageNameStore } from '$lib/stores';
     
     // Set the page name
-    $pageNameStore = 'Home';
+    $pageNameStore = 'Sell Local';
 
     let { data }: { data: PageData } = $props();
 </script>
@@ -14,3 +13,6 @@
     <meta name="description" content="Your description" />
     <meta property="og:title" content="Your OG Title" />
 </svelte:head>
+<div class="mt-96 mb-96">
+    <p>Hey</p>
+</div>

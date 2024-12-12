@@ -1,10 +1,9 @@
 <script lang="ts">
     import type { PageData } from './$types';
-    import Hero from '$lib/components/slices/Hero.svelte';
     import { pageNameStore } from '$lib/stores';
     
     // Set the page name
-    $pageNameStore = 'Home';
+    $pageNameStore = 'Buy Local';
 
     let { data }: { data: PageData } = $props();
 </script>

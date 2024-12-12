@@ -22,6 +22,7 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
-		"@tailwindcss/typography": "^0.5.15"
+		"@tailwindcss/typography": "^0.5.15",
+		"clsx": "^2.1.1"
 	}
 }
