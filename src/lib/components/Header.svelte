@@ -92,7 +92,7 @@
 
   <!-- Navigation Menu -->
   <nav class="mt-6 bg-slate/100 h-screen">
-    <!-- Desktop Menu -->
+    <!-- Mobile PopOut Menu -->
       {#each navigation as item (item.label)}
         <div class="hover:text-slate text-white text-lg p-4">
           <a href={item.link} onclick={toggleMenu} class="inline-flex items-center">
@@ -100,6 +100,14 @@
           </a>
         </div>
       {/each}
+      <div>
+        <SignedIn>
+          <UserButton afterSignOutUrl="/" />
+        </SignedIn>
+        <SignedOut>
+            <SignInButton mode="modal" class="text-slate bg-white hover:text-white hover:bg-slate border border-slate transition ease-in-out duration-500 flex items-center px-4 py-2 rounded-full" />
+        </SignedOut>
+      </div>
   </nav>
 
 </div>
