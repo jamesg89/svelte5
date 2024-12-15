@@ -16,11 +16,11 @@
 
 <CTAImageLR 
     title="WHAT WE’RE ALL ABOUT" 
-    src="/the-local-real-estate-group-team-photo-scaled.avif" 
+    imgsrc="/the-local-real-estate-group-team-photo-scaled.avif" 
     imageLeft={false}
     bgcolor="slate"
     >
-            <p class="mt-8 text-sm"><strong>Realtors, Mortgage Advisors, Allies.</strong></p>
+            <p class="mt-8"><strong>Realtors, Mortgage Advisors, Allies.</strong></p>
             <p> <strong>5.0</strong>&nbsp;Stars - Based on 45 Google Reviews</p>
             <div class="mt-8">
                 <Button button_link="/buy-local" bgcolor="slate" button_label="Buy Local" button_cta={false} />
@@ -31,11 +31,9 @@
 </CTAImageLR>
 
 <CtaCentered
-    title="Something else we like" 
+    title="The 4 Step Home Buying System" 
     bgcolor="slate"
-    content='<p class="mt-8 text-sm"><strong>Realtors, Mortgage Advisors, Allies.</strong></p>
-            <p> <strong>5.0</strong>&nbsp;Stars - Based on 45 Google Reviews</p> '
-    imgsrc="/the-local-real-estate-group-team-photo-scaled.avif"
 >
-<!--<Button />-->
+    <p class="mt-4 mb-4">Our system is designed to be a stress free, easy and empowered home buyer experience</p>
+    <Button button_link="/buy-local" bgcolor="slate" button_label="Start Your Search" button_cta={true} />
 </CtaCentered>

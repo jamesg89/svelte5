@@ -3,8 +3,6 @@
     export let title: string;
     export let bgcolor: string;
     export let number: number | undefined = undefined;
-    export let content: string;
-    export let imgsrc: string | undefined = undefined;
 
 </script>
 
@@ -21,18 +19,7 @@
             <!-- Title -->
             <h2 class="text-6xl font-bold">{title}</h2>
 
-            
-            <!-- Content Section -->
-             {@html content}
-
-            <!-- Imager Section (If Set)-->
-            {#if imgsrc}
-                <div class="w-full min-w-[480px] md:w-1/2 opacity-90 p-0">
-                    <img src={imgsrc} alt="{title}" class="max-h-[900px] w-auto">
-                </div>
-            {/if}
-                  
-            <!-- Button Section (If Set)-->       
+            <!-- Content Section -->    
             <slot></slot>
         </div> 
     </div>

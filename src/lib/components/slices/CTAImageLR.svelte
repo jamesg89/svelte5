@@ -1,6 +1,6 @@
 <script lang="ts">
     import clsx from 'clsx';
-    export let src: string;
+    export let imgsrc: string;
     export let imageLeft: boolean;
     export let number: number | undefined = undefined;
     export let title: string;
@@ -20,7 +20,7 @@
                 <slot></slot>
             </div> 
             <div class="w-full min-w-[480px] md:w-1/2 opacity-90 p-0">
-                <img {src} alt="{title}" class="max-h-[900px] w-auto">
+                <img src={imgsrc} alt="{title}" class="max-h-[900px] w-auto">
             </div>
     </div>
 </section>
