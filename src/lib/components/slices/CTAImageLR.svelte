@@ -2,6 +2,7 @@
     import clsx from 'clsx';
     export let src: string;
     export let imageLeft: boolean;
+    export let number: number | undefined = undefined;
     export let title: string;
     export let bgcolor: string;
 
@@ -9,7 +10,12 @@
 
 <section class="{clsx(bgcolor === "slate" ? "bg-slate text-white" : "bg-white text-slate")}">
     <div class="{clsx('container flex flex-col relative z-10 gap-5 justify-around items-center h-full md:flex-row', imageLeft===false ? " md:flex-row" : "md:flex-row-reverse space-x-reverse")}">
-            <div class="w-full min-w-[480px] md:w-1/2 mt-8 md:mt-0"> 
+            <div class="w-full min-w-[480px] md:w-1/2 mt-8 md:mt-0">
+                {#if number}
+					<h3 class="text-lg">	
+						{number}
+					</h3>
+				{/if}
                 <h2 class="text-6xl font-bold">{title}</h2> 
                 <slot></slot>
             </div> 
